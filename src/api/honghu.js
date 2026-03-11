@@ -21,7 +21,7 @@ const api = axios.create({
 let conversationHistory = []
 
 /**
- * 调用鸿鹄大模型进行对话
+ * 调用元景大模型进行对话
  * @param {string} message - 用户消息
  * @returns {Promise<string>} - AI回复
  */
@@ -72,7 +72,7 @@ export async function chatWithHonghu(message) {
     return reply
 
   } catch (error) {
-    console.error('鸿鹄大模型调用失败:', error)
+    console.error('元景大模型调用失败:', error)
     
     // 模拟回复（开发环境）
     return getMockReply(message)
